@@ -76,6 +76,8 @@ using namespace MDL;
  *      <li>3D Game Studio MDL7</li>
  *      <li>Halflife 1</li>
  *      <li>Halflife 2</li>
+ *      <li>Titanfall 1</li>
+ *      <li>Titanfall 2</li>
  *   </ul>
  *  These formats are partially identical and it would be possible to load
  *  them all with a single 1000-line function-beast. However, it has been

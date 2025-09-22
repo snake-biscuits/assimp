@@ -253,6 +253,7 @@ void MDLImporter::InternReadFile(const std::string &pFile,
                 ASSIMP_LOG_DEBUG("MDL subtype: Half-Life 1/Goldsrc Engine, magic word is IDST/IDSQ");
                 InternReadFile_HL1(pFile, iMagicWord);
             } else {
+            // } else if (pHeader->version >= AI_MDL_HL2_MIN_VERSION &&->version >= AI_MDL_HL2_MAX_VERSION) {
                 ASSIMP_LOG_DEBUG("MDL subtype: Source(tm) Engine, magic word is IDST/IDSQ");
                 InternReadFile_HL2();
             }
@@ -2000,6 +2001,7 @@ void MDLImporter::InternReadFile_HL1(const std::string &pFile, const uint32_t iM
 void MDLImporter::InternReadFile_HL2() {
     //const MDL::Header_HL2* pcHeader = (const MDL::Header_HL2*)this->mBuffer;
     throw DeadlyImportError("HL2 MDLs are not implemented");
+    // TODO: HalfLife::HL2MDLLoader loader( ... );
 }
 
 #endif // !! ASSIMP_BUILD_NO_MDL_IMPORTER

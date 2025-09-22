@@ -1391,7 +1391,7 @@ IF (ASSIMP_BUILD_DRACO)
   ADD_DEFINITIONS( -DASSIMP_ENABLE_DRACO )
 ENDIF()
 
-ADD_LIBRARY( assimp ${assimp_src} )
+ADD_LIBRARY( assimp ${assimp_src}  "AssetLib/MDL/HalfLife2/HL2FileData.h" "AssetLib/MDL/HalfLife2/HL2VTXFileData.h" "AssetLib/MDL/HalfLife2/HL2VVCFileData.h" "AssetLib/MDL/HalfLife2/HL2VVDFileData.h" "AssetLib/MDL/HalfLife2/HL2MDLLoader.h")
 ADD_LIBRARY(assimp::assimp ALIAS assimp)
 
 # Add or remove dllexport tags depending on the library type.
